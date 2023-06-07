@@ -1,17 +1,18 @@
 import React from 'react';
-import Card from './Card';
-import { contacts } from './contacts.js';
+import Card from './Card.js';
 
-const CardList = () => {
+const CardList = ({ list }) => {
     return (
-        <>
-        {contacts.map((user, i) => {
+       <>
+        {
+        list.map((user, i) => {
         return (
              <Card 
-            key={contacts[i].id} 
-            id={contacts[i].id} 
-            name={contacts[i].name} 
-            email={contacts[i].email}
+            key={user.id} 
+            id={user.id} 
+            name={user.name} 
+            email={user.email}
+            picture={user.picture}
              />
             );
         })

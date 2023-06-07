@@ -1,4 +1,8 @@
+img {
+    height: 270px;
+    width: 270px;
+}
 
-.dib {
-    background: #43C6AC;
+h2, p {
+    color: #444
 }
