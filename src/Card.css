@@ -4,5 +4,9 @@ img {
 }
 
 h2, p {
-    color: #444
+    color: #444;
+}
+
+.dib {
+    background: rgba(68, 68, 68, 0.2);
 }
