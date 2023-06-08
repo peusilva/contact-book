@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import CardList from './CardList.js';
-import SearchBox from './SearchBox.js';
-import Scroll from './Scroll';
+import CardList from '../Components/CardList.js';
+import SearchBox from '../Components/SearchBox.js';
+import Scroll from '../Components/Scroll.js';
 import './App.css';
 
 class App extends Component {
@@ -24,13 +24,13 @@ class App extends Component {
     }
 
     render () {
-        const filteredContacts = this.state.contacts.filter(contacts => {
-            return contacts.name.toLowerCase().includes(this.state.searchfield.toLowerCase())
+        const {contacts, searchfield} = this.state;
+        const filteredContacts = contacts.filter(contact => {
+            return contact.name.toLowerCase().includes(searchfield.toLowerCase())
          }) 
-         if (this.state.contacts.length === 0) {
-            return <h1 className='tc'>Loading</h1>
-         } else {
-    return (
+         return !contacts.length ?
+        <h1 className='tc'>Loading</h1> :
+        (
         <>
         <div className='tc'>
             <div className='header'>
@@ -43,7 +43,6 @@ class App extends Component {
         </div>
         </>
     )
-    }
 }
 }
 

@@ -5,7 +5,7 @@ import reportWebVitals from './reportWebVitals';
 import 'tachyons';
 // import CardList from './CardList';
 // import { contacts } from './contacts.js'
-import App from './App'
+import App from './Containers/App'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
