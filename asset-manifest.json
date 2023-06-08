@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/contact-book/static/css/main.f261688b.css",
+    "main.js": "/contact-book/static/js/main.c91b0f33.js",
+    "static/js/787.585224ee.chunk.js": "/contact-book/static/js/787.585224ee.chunk.js",
+    "static/media/Digitalt-04no.ttf": "/contact-book/static/media/Digitalt-04no.d4759c25447d1ca884fe.ttf",
+    "index.html": "/contact-book/index.html",
+    "main.f261688b.css.map": "/contact-book/static/css/main.f261688b.css.map",
+    "main.c91b0f33.js.map": "/contact-book/static/js/main.c91b0f33.js.map",
+    "787.585224ee.chunk.js.map": "/contact-book/static/js/787.585224ee.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f261688b.css",
+    "static/js/main.c91b0f33.js"
+  ]
+}
